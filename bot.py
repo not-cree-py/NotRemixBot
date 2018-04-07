@@ -14,7 +14,7 @@ import inspect
 from contextlib import redirect_stdout
 from discord.ext import commands
 import json
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('_'),description="Remixbot but not...\n\nHelp Commands",owner_id=250674147980607488)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('-'),description="Remixbot but not...\n\nHelp Commands",owner_id=250674147980607488)
 
 
 
@@ -24,7 +24,7 @@ async def on_ready():
     while True:
         await bot.change_presence(activity=discord.Game(name=f"with {len(bot.guilds)} servers!"))
         await asyncio.sleep(10)
-        await bot.change_presence(activity=discord.Game(name="**help"))
+        await bot.change_presence(activity=discord.Game(name="-help"))
         await asyncio.sleep(10)
         
         
