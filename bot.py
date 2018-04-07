@@ -48,11 +48,11 @@ async def say(ctx, *, message:str):
     await ctx.send(message)    
     
     
-    
 @bot.command()
 async def gay(ctx):
-await.ctx send ("**https://www.youtube.com/watch?v=noQXojwExRA**")
-
+    """Hehehe..."""
+    await ctx.send ("**https://www.youtube.com/watch?v=noQXojwExRA**") 
+    
 
 if not os.environ.get('TOKEN'):
    print("no token found REEEE!")
